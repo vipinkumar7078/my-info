@@ -1,0 +1,272 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #0b0c10;
+  color: #fff;
+}
+h2 {
+  color: #1abc9c;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 10%;
+  background: linear-gradient(135deg, #1abc9c, #2c3e50);
+}
+.hero-text h1 {
+  font-size: 52px;
+  margin: 0;
+}
+.hero-text h2 {
+  font-size: 26px;
+  margin: 10px 0;
+  color: #fff;
+}
+.icons span {
+  background: #fff;
+  color: #1abc9c;
+  padding: 8px 15px;
+  border-radius: 20px;
+  margin: 5px;
+  font-weight: bold;
+}
+/* .hero-img img {
+  width: 200px;
+  height: 300px;
+   border-radius: 10%; 
+  border: 5px solid #fff;
+} */
+
+/* .hero-img img {
+  width: 200px;
+  height: 200px;
+  border-radius: 40%;
+  border: 4px solid #1abc9c;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);  
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}   */
+
+
+.hero-img img {
+  width: 280px;
+  border-radius: 50%;
+  border: 3px solid #1abc9c;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5), 
+              0 5px 15px rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
+}
+
+/* Hover effect for soft glow */
+.hero-img img:hover {
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.6),
+              0 8px 20px rgba(26, 188, 156, 0.4);
+  transform: scale(1.02);
+}
+
+
+
+
+
+
+
+
+
+
+.hero-img img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.6);
+}
+
+
+/* About Section */
+#about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 10%;
+}
+.about-text {
+  flex: 1;
+  margin-right: 40px;
+  line-height: 1.8;
+}
+.about-img img {
+  width: 250px;
+  border-radius: 50%;
+  border: 4px solid #1abc9c;
+}
+.btn,
+.btn-outline {
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-right: 10px;
+}
+.btn {
+  background: #1abc9c;
+  color: #fff;
+}
+.btn-outline {
+  border: 2px solid #1abc9c;
+  color: #1abc9c;
+}
+
+/* Education Section */
+/* #education {
+  padding: 80px 10%;
+  background: #1f2833;
+}
+.edu-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.edu-text {
+  flex: 1;
+  margin: 20px;
+  background: #0b0c10;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.edu-img img {
+  width: 300px;
+  border-radius: 50px;
+  margin-top: 20px;
+  padding-right: 10px;
+} */
+
+
+#education {
+  padding: 80px 10%;
+  background: #1f2833;
+}
+
+.edu-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch; /* सभी cards की ऊँचाई बराबर */
+  gap: 25px;
+}
+
+.edu-text {
+  flex: 1;
+  min-width: 280px;
+  background: #0b0c10;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.edu-text:hover {
+  transform: translateY(-5px);
+}
+
+.edu-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edu-img img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(26,188,156,0.3);
+  transition: all 0.4s ease;
+}
+
+.edu-img img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 40px rgba(26,188,156,0.5);
+}
+
+
+
+/* Skills Section */
+#skills {
+  text-align: center;
+  padding: 80px 10%;
+}
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+.skills-grid span {
+  background: #1abc9c;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: 500;
+}
+
+/* Projects Section */
+#projects {
+  padding: 80px 10%;
+  background: #0b0c10;
+}
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+.card {
+  background: #1f2833;
+  padding: 25px;
+  border-radius: 10px;
+  width: 300px;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Thank You */
+/* .thankyou {
+  text-align: center;
+  padding: 60px;
+  background: #1abc9c;
+  color: #0a0a0a;
+  font-size: 18px;
+} */
+
+/* Thank You Section */
+.thankyou {
+  text-align: center;
+  padding: 100px 20px; /* बड़ा padding ताकि section बड़ा दिखे */
+  background: linear-gradient(135deg, #cce1dd, #74d9c6);
+  color: #fff;
+}
+.thankyou h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.thankyou p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero,
+  #about,
+  .edu-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
